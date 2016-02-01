@@ -109,9 +109,11 @@ names = {'PN','CN','PL','CL','PD','CD'};
 for name = names
     figure()
     subplot(1,2,1)
-    eval(char(strcat('imagesc(nanmean(',name,'_GR,3))')))
+    eval(char(strcat('pcolor(nanmean(',name,'_GR,3))')))
     title(strcat(name,' GR'))
+    shading(gca,'interp')
     subplot(1,2,2)
-    eval(char(strcat('imagesc(nanmean(',name,'_OD,3))')))
+    eval(char(strcat('pcolor(nanmean(',name,'_OD,3))')))
     title(strcat(name,' OD'))
+    shading(gca,'interp')
 end
