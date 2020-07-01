@@ -1,4 +1,4 @@
-%% Map yo Plates
+%% Map your Plates
 % generates exploratory figures from tecan plate data. accepts data post
 % processing by max growth rate script (as csv)
 %
@@ -107,7 +107,7 @@ end
 
 clear('i','r')
 
-%% Plot yo Shit
+%% Plot
 
 iptgs = [0 5 10 30 100 200];
 atcs = [0 3 5 10 12 50];
